@@ -1,0 +1,129 @@
+:root {
+    /* Colors */
+
+    --dark-blue: #202733;
+    --dark-grayish-blue: #313A48;
+    --grayish-blue: #4F5D74;
+    --light-cyan: #CEE3E9;
+    --neon-green: #53FFAA;
+
+    /* Font */
+    
+    /* H1 Advice Text */
+    --advicetx-font-family: 'Manrope', sans-serif;
+    --advicetx-font-size: 28px;
+    --advicetx-font-weight: 800;
+    --advicetx-color: var(--light-cyan);
+
+    /* Advice Number */
+    --adviceid-font-family: 'Manrope', sans-serif;
+    --adviceid-font-size: 13px;
+    --adviceid-font-weight: 800;
+    --adviceid-color: var(--neon-green);
+}
+
+* { 
+    /* CSS Universal properties */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 15px;
+    box-shadow: 30px 50px 80px rgb(0 0 0 / 10%);
+    max-width: 33.75rem;
+    
+}
+
+#advice-id {
+    font-family: var(--adviceid-font-family);
+    font-size: var(--adviceid-font-size);
+    font-weight: var(--adviceid-font-weight);
+    letter-spacing: 4.09px;
+    line-height: 18px;
+    color: var(--adviceid-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+#advice-text {
+    font-family: var(--advicetx-font-family);
+    font-size: var(--advicetx-font-size);
+    color: var(--advicetx-color);
+    text-align: center;
+    font-weight: var(--advicetx-font-weight);
+    line-height: 38px;
+    letter-spacing: -0.3px;
+    max-width: 80%;
+}
+
+picture#svgDivider {
+    margin: 2rem 0 4rem 0;
+}
+
+#svgDivider img {
+    max-width: 90%;
+}
+
+#dice__container {
+    background-image: url(../images/icon-dice.svg);
+    background-color: var(--neon-green);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 32px;
+    border-radius: 50%;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#dice__container:hover {
+    box-shadow: rgb(83 255 169) 0px 0px 25px;
+}
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: var(--neon-green); 
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    #flex-container {
+        max-width: 24rem;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    
+    
+}
